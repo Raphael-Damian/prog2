@@ -28,5 +28,6 @@ def main():
     plt.savefig(f'NumberofPoints_{n}.png')
     plt.close()
     print('PI =',pi)
+    
 if __name__ == '__main__':
     main()
