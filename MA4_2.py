@@ -30,7 +30,7 @@ def main():
 	time_c2 = time.perf_counter()
 	print("time c++: ", time_c2-time_c1)
 	
-	n_list = [15,20,25]
+	n_list = [30,35,40]
 	py_times = []
 	cplusplus_times = []
 	for i in n_list:
