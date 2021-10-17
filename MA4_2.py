@@ -2,6 +2,7 @@
 
 import time
 from integer import Integer
+import matplotlib.pyplot as mp
 
 def pfib(n):
 	if n == 0 or n == 1:
@@ -29,5 +30,22 @@ def main():
 	time_c2 = time.perf_counter()
 	print("time c++: ", time_c2-time_c1)
 	
+	n_list = [15,20,25]
+	py_times = []
+	cplusplus_times = []
+	for i in n_list:
+		t1 = time.perf_counter()
+		f = Integer(i)
+		f.fib()
+		t2 = time.perf_counter()
+		cplusplus_times.append(t2-t1)
+		t3 = time.perf_counter()
+		pfib(n)
+		t4 = time.perf_counter()
+		py_times.append(t4-t3)
+	mp.plot(n_list, cplusplus_times)
+	mp.plot(n_list, py_times)
+	mp.savefig('plot_fibtimes.png')
 if __name__ == '__main__':
 	main()
+
