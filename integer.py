@@ -20,3 +20,6 @@ class Integer(object):
         
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
+
+	def fib(self):
+		return lib.Integer_fib(self.obj)
