@@ -36,11 +36,11 @@ def main():
 	for i in n_list:
 		t1 = time.perf_counter()
 		f = Integer(i)
-		f.fib()
+		k = f.fib()
 		t2 = time.perf_counter()
 		cplusplus_times.append(t2-t1)
 		t3 = time.perf_counter()
-		pfib(n)
+		j = pfib(i)
 		t4 = time.perf_counter()
 		py_times.append(t4-t3)
 	mp.plot(n_list, cplusplus_times)
