@@ -1,3 +1,9 @@
+
+//integer.cpp
+//Student: Raphaël Ashruf
+//Mail: raphael-damian.ashruf.3037@student.uu.se
+//Reviewed by: Niklas Wik
+//Date reviewed: 18-10-2021 (18 Oktober 2021)
 #include <cstdlib>
 // Integer class 
 

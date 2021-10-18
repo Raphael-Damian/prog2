@@ -1,5 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3:
+""" MA4_2.py
 
+Student: Raphaël Ashruf
+Mail: raphael-damian.ashruf.3037@student.uu.se
+Reviewed by: Niklas Wik
+Date reviewed: 18-10-2021 (18 Oktober 2021)
+""" 
 import time
 from integer import Integer
 import matplotlib.pyplot as mp
@@ -18,17 +24,10 @@ def main():
 	n = 5
 	print(pfib(n)) #so python function works!
 	#now we shall time it:
-	n = 35
-	time_py = time.perf_counter()
-	x = pfib(n)
-	time_py2 = time.perf_counter()
-	print("time python: ",time_py2-time_py)
-	
-	time_c1 = time.perf_counter()
+	n = 47
 	f = Integer(n)
 	x = f.fib()
-	time_c2 = time.perf_counter()
-	print("time c++: ", time_c2-time_c1)
+	print("fib(47) = ", x)
 	
 	n_list = [30,35,40]
 	py_times = []
